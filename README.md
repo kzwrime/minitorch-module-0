@@ -16,7 +16,7 @@ cachedir: .pytest_cache
 hypothesis profile 'default' -> database=DirectoryBasedExampleDatabase('minitorch/minitorch-module-0/.hypothesis/examples')
 rootdir: minitorch/minitorch-module-0, configfile: setup.cfg
 plugins: env-0.6.2, hypothesis-6.54.0
-collected 44 items                                                      
+collected 44 items
 
 tests/test_module.py::test_stacked_demo ModuleA1(
   (a): ModuleA2()
@@ -72,3 +72,12 @@ tests/test_operators.py::test_backs PASSED
 
 ===================== 43 passed, 1 xfailed in 5.38s =====================
 ```
+
+pre-commit all passed.
+
+```bash
+pre-commit autoupdate
+pre-commit run --all
+```
+
+![Alt text](image/pre-commit.png)

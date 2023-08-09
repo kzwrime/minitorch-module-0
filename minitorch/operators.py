@@ -181,7 +181,7 @@ def reduce(
          fn(x_1, x_0)))`
     """
 
-    def _reduce(ls: Iterable[float]):
+    def _reduce(ls: Iterable[float]) -> float:
         result = start
         for x in ls:
             # I think x should be on the left, result should be on the right,
